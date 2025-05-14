@@ -6,10 +6,10 @@
 .m-footer__content {
   color: $white;
   text-align: center;
-  padding: 50px $mobile-space;
+  padding: 10px $mobile-space;
 
   @include respond-to('medium') {
-    padding: 75px 0;
+    padding: 15px 0;
     max-width: 680px;
     margin: 0 auto;
   }
@@ -35,10 +35,9 @@
   font-size: 0.875rem;
   letter-spacing: 0.3px;
   line-height: 1.7;
-  margin-bottom: $mobile-space;
 
   span {
-    display: block;
+    display: inline;
 
     @include respond-to('medium') {
       display: inline;

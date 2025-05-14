@@ -8,7 +8,7 @@
   @extend .content-centered;
 
   @include respond-to('medium') {
-    min-height: 400px;
+    min-height: 200px;
     padding: 150px 0 75px;
   }
 
@@ -17,16 +17,33 @@
     background-color: $black;
 
     @include respond-to('medium') {
-      min-height: 450px;
+      min-height: 225px;
     }
 
     @include respond-to('extra-large') {
-      min-height: 565px;
+      min-height: 282px;
     }
 
     .m-hero-title {
       color: $white;
     }
+  }
+
+  &.tall {
+    color: $white;
+    background-color: $black;
+
+    @include respond-to('medium') {
+      min-height: 500px;
+    }
+
+    @include respond-to('extra-large') {
+      min-height: 550px;
+    }
+
+    .m-hero-title {
+      color: $white;
+    } 
   }
 
   &.no-picture.in-post {
@@ -53,7 +70,7 @@
   img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: cover; 
   }
 }
 
