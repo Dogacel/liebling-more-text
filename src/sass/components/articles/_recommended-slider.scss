@@ -23,6 +23,11 @@
   .m-article-card {
     width: 100% !important;
     margin: 0 !important;
+    flex-direction: column;
+
+    .m-article-card__picture {
+      width: 100%;
+    }
 
     @include respond-to("large") {
       .m-article-card__picture {
